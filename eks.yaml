@@ -1,0 +1,17 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: roboshop
+  region: us-east-1
+
+managedNodeGroups:
+  - name: spot
+    instanceType: m5.large
+    desiredCapacity: 3
+    spot: true
+
+
+## Manifest file to create EKS cluster 
+## Workstation is having ekctl client with IAM role it can createt the clsuter if we apply the palybook.
+## kubectl apply -f eks.yaml
