@@ -13,5 +13,8 @@ managedNodeGroups:
 
 
 ## Manifest file to create EKS cluster 
-## Workstation is having ekctl client with IAM role it can createt the clsuter if we apply the palybook.
-## kubectl apply -f eks.yaml
+## Workstation is having ekctl client with IAM CLI access role. it can create the clsuter if we apply the manifet file.Backend it uses the cloud formation to create the EKS cluster.
+
+## eksctl create cluster --config-file=<manifest_file> 
+## eksctl create cluster -f <maniffest_file> 
+## eksctl delete cluster -f <maniffest_file> 
