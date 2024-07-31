@@ -12,7 +12,7 @@ managedNodeGroups:
     spot: true
 
 
-## Manifest file to create EKS cluster 
+## Manifest file to create EKS cluster. 
 ## Workstation is having ekctl client with IAM CLI access role(Login to workstation and do aws configure). it can create the clsuter if we apply the below manifest file. Backend it uses the cloud formation to create the EKS cluster.
 
 ## eksctl create cluster --config-file=<manifest_file> 
